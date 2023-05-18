@@ -37,6 +37,7 @@ public class TokenGenerator {
                 .expiresAt(now.plus(5, ChronoUnit.MINUTES))
                 .subject(user.getId())
                 .claim("username",user.getUsername())
+                .claim("nom", user.getNom())
                 .build();
 
         return accessTokenEncoder.encode(JwtEncoderParameters.from(claimsSet)).getTokenValue();

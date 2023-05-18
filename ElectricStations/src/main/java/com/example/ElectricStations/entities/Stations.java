@@ -9,6 +9,7 @@ import org.springframework.data.geo.Point;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import java.time.LocalDateTime;
 import java.util.Date;
@@ -19,10 +20,12 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+@CrossOrigin
 
 public class Stations {
     @Id
     private String id;
+    private String name;
     @NonNull
     private double latitude;
     @NonNull

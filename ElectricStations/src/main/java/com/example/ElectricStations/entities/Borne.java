@@ -24,6 +24,7 @@ import java.util.List;
 public class Borne {
     @Id
     private String id;
+    private String name;
     private float puissance;
     private float tempsCharge;
     private Mode mode;

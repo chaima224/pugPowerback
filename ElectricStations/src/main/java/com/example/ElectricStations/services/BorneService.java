@@ -47,7 +47,7 @@ public class BorneService {
         if (existingBorne.isPresent()) {
             // Mettre à jour les propriétés de la station existante avec les nouvelles valeurs
             Borne updatedBorne = existingBorne.get();
-
+            updatedBorne.setName(newBorne.getName());
             updatedBorne.setPuissance(newBorne.getPuissance());
             updatedBorne.setTempsCharge(newBorne.getTempsCharge());
             updatedBorne.setMode(newBorne.getMode());

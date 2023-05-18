@@ -54,7 +54,7 @@ public class StationService {
         if (existingStation.isPresent()) {
             // Mettre à jour les propriétés de la station existante avec les nouvelles valeurs
             Stations updatedStation = existingStation.get();
-
+            updatedStation.setName(newStation.getName());
             updatedStation.setLatitude(newStation.getLatitude());
             updatedStation.setLongitude(newStation.getLongitude());
             updatedStation.setMoyNote(newStation.getMoyNote());

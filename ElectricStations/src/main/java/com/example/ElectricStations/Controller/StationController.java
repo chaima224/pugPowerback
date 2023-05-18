@@ -22,6 +22,7 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
+@CrossOrigin("http://localhost:4200")
 @RequestMapping("/electricStations")
 public class StationController {
 
